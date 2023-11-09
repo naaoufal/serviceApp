@@ -50,10 +50,15 @@ const BiographyScreen = () => {
                         width: "40%",
                         padding: 12,
                         borderRadius: 6,
-                        marginTop: 20,
+                        marginTop: 40,
                         opacity: 0.9,
                     }}>
-                        <p>Why Surf</p>
+                        <p style={{
+                            color: "#0C356A",
+                            fontSize: 22,
+                            fontWeight: "bolder",
+                            fontFamily: "monospace",
+                        }}>Why Surf</p>
                         <p style={{
                             fontFamily: "monospace",
                             fontSize: 14,
