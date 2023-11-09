@@ -1,5 +1,6 @@
 import NavBarComponent from "../../components/NavbarComponent";
 import CarImage from "../../assets/images/car-image.png";
+import ServiceCardComponent from "../../components/ServiceCardComponent";
 
 const ServicesScreen = (props) => {
   console.log("props", props);
@@ -44,31 +45,8 @@ const ServicesScreen = (props) => {
         >
           Services :
         </text>
-        <div className="row">
-          <div
-            className="col-sm-3"
-            style={
-              {
-                //   border: "1px solid #000",
-                //   display: "flex",
-                //   flexDirection: "column",
-              }
-            }
-          >
-            <div class="card" style={{}}>
-              <img src={CarImage} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
+        <div>
+          <ServiceCardComponent />
         </div>
       </div>
     </div>

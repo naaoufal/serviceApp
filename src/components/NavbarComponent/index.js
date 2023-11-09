@@ -9,26 +9,51 @@ import {
 
 const NavBarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" style={{
+      backgroundColor: "#0C356A",
+    }}>
       <Container>
-        <Navbar.Brand href="/">LOGO</Navbar.Brand>
+        <Navbar.Brand style={{
+          color: "#fff"
+        }} href="/">LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          {/* <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav> */}
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav fil className="justify-content-end" style={{
+            marginRight: 80,
+          }}>
+            <Nav.Item style={{
+              marginLeft: 20,
+              marginRight: 20,
+            }}>
+              <Nav.Link href="#" style={{
+                color: "#fff"
+              }}>Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item style={{
+              marginLeft: 20,
+              marginRight: 20,
+            }}>
+              <Nav.Link  style={{
+                color: "#fff"
+              }} href="#">Offeres</Nav.Link>
+            </Nav.Item>
+            <Nav.Item style={{
+              marginLeft: 20,
+              marginRight: 20,
+            }}>
+              <Nav.Link  style={{
+                color: "#fff"
+              }} href="#">About</Nav.Link>
+            </Nav.Item>
+            <Nav.Item style={{
+              marginLeft: 20,
+              marginRight: 20,
+            }}>
+              <Nav.Link  style={{
+                color: "#fff"
+              }} href="#">Contacter Nous</Nav.Link>
+            </Nav.Item>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
