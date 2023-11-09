@@ -1,5 +1,9 @@
 import CardComponent from "../../components/CardComponent";
+import CarouselComponent from "../../components/CarouselComponent";
+import Footer from "../../components/Footer";
 import NavBarComponent from "../../components/NavbarComponent";
+import BiographyScreen from "../BiographyScreen";
+import OfferScreen from "../Offers";
 
 const DATA = [
   { id: 1, name: "Services" },
@@ -14,35 +18,16 @@ const HomeScreen = () => {
   return (
     <div>
       <NavBarComponent />
-      <div
-        style={{
-          height: "50px",
-          backgroundColor: "light",
-        }}
-      ></div>
-      {/* services icons */}
-      <div
-        className="container"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          className="row"
-          style={{
-            width: "90%",
-          }}
-        >
-          {DATA &&
-            DATA?.map((element) => (
-              <div className="col-md-4">
-                <CardComponent element={element} />
-              </div>
-            ))}
-        </div>
-      </div>
-      {/*  */}
+      {/* Slider Images */}
+      <CarouselComponent />
+      {/* our offers */}
+      <OfferScreen />
+      {/* Biography */}
+      <BiographyScreen />
+      {/* sponsor */}
+      
+      {/* footer */}
+      <Footer />
     </div>
   );
 };
