@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import NavBarComponent from "../../components/NavbarComponent";
 import BiographyScreen from "../BiographyScreen";
 import OfferScreen from "../Offers";
+import SponsorScreen from "../SponsorScreen";
 
 const DATA = [
   { id: 1, name: "Services" },
@@ -25,7 +26,7 @@ const HomeScreen = () => {
       {/* Biography */}
       <BiographyScreen />
       {/* sponsor */}
-      
+      <SponsorScreen />
       {/* footer */}
       <Footer />
     </div>
