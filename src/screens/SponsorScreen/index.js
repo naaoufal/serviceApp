@@ -3,6 +3,10 @@ const Sponsors = [
     {id: 2, name: "sponsor-2", img: "assets/images/sponsor-4.png"},
     {id: 3, name: "sponsor-3", img: "assets/images/sponsor-4.png"},
     {id: 4, name: "sponsor-4", img: "assets/images/sponsor-4.png"},
+    // {id: 5, name: "sponsor-4", img: "assets/images/sponsor-4.png"},
+    // {id: 6, name: "sponsor-4", img: "assets/images/sponsor-4.png"},
+    // {id: 7, name: "sponsor-4", img: "assets/images/sponsor-4.png"},
+    // {id: 8, name: "sponsor-4", img: "assets/images/sponsor-4.png"},
 ];
 
 const SponsorScreen = () => {
@@ -38,7 +42,9 @@ const SponsorScreen = () => {
                 marginTop: 60,
             }}>
                 {Sponsors && Sponsors?.map((item) => (
-                    <div>
+                    <div style={{
+                        // width: "50%",
+                    }}>
                         <img style={{
                             width: "100%",
                             height: 200,
